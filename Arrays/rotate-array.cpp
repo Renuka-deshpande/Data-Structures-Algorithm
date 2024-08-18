@@ -36,5 +36,3 @@ int main()
         cout << arr[i] << " ";
     }
 }
-//tc-o(n)
-//sc-o(1)

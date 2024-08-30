@@ -18,29 +18,6 @@ public:
     }
 };
 
-bool palindrome(Node *head)
-{
-    Node *temp = head;
-    stack<int> st;
-
-    while (temp != NULL)
-    {
-        st.push(temp->data);
-        temp = temp->next;
-    }
-    temp = head;
-    while (temp != NULL)
-    {
-        if (temp->data != st.top())
-        {
-            return false;
-        }
-        temp = temp->next;
-        st.pop();
-    }
-    return true;
-}
-
 Node *reverselinkedlist(Node *head)
 {
     if (head == NULL || head->next == NULL)
@@ -77,10 +54,8 @@ bool checkpalindrome(Node *head)
         first = first->next;
         second = second->next;
     }
-        
         reverselinkedlist(newhead);
-        return true;
-    
+        return true;   
 }
 
 int main()

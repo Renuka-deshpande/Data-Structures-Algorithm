@@ -83,4 +83,5 @@ int main()
     head2->next->next = new Node(7, nullptr);
     head=addTwonumbers(head,head2);
     print(head);
+    return 0;
 }
